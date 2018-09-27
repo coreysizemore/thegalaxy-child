@@ -1,30 +1,470 @@
 /* color variables */
 
-$colorone: #111111;
-$colortwo: #222222;
-$colorthree: #333333;
+$colorone: #73877B;
+$colortwo: #F4C05F;
+$colorthree: #BF6952;
+$background: #FAF3DD;
+$lightfont: #ffffff;
+$darkfont: #303133;
+$bodyfont: #888888;
 
 /* end color variables */
 
+/* start theme edits */
+
+/* top bar 
+
+#top_bar {
+	&.fullwidth,
+	&.containerwidth {
+		background: $colorone;
+	}
+}
+
+*/
+
+/* header 
+
+a#searchopen,
+a#mobileopen {
+	&:link,
+	&:visited {
+		background: $background;
+		color: $colorone;
+	}
+}
+
+#search,
+#mobile_nav {
+	background: rgba($colorone, .95);
+	
+	#searchform {
+		input[type="submit"] {
+			color: $colorone;
+		}
+	}
+	
+	.mobile_nav_wrapper {
+		#mobile_search {
+			input[type="submit"] {
+				color: $colorone;
+			}
+		}
+	}
+}
+
+header {
+	
+	&#header_home {
+		background: url('../img/home.jpg') no-repeat;
+		background-size: cover;
+		background-attachment: fixed;	
+	}
+	
+	&#header_page {
+		background: url('../img/page.jpg') no-repeat;
+		background-size: cover;
+		background-attachment: fixed;	
+	}
+	
+	#nav_bar {
+		
+		#primary_nav {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						color: $lightfont;
+					}
+				}
+			}
+		}
+		
+		&.scroll-fix {
+			background: $background;
+			
+			#primary_nav {
+				ul {
+					li {
+						a:link,
+						a:visited {
+							color: $darkfont;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&#header_home_mobile,
+	&#header_page_mobile {
+		.mobile_navigation_bar {
+			background: $colorone;
+		}
+	}
+	
+	#home_logo {
+		#home_page_nav {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						background: $colortwo;
+						color: $lightfont;
+					}
+				}
+			}
+		}
+	}
+	
+	.image_overlay {
+		background: rgba($colortwo, .75);
+	}
+}
+
+*/
+
+/* main content areas 
+
+.breadcrumb_wrapper {
+	span.breadcrumbs {
+		a:link,
+		a:visited {
+			color: $colorone;
+		}
+	}
+}
+
+#attention_bar {
+	background: $colorone;
+	
+	.attention_bar_top,
+	.attention_bar_bottom {
+		h3 {
+			color: $lightfont;
+		}
+		
+		ul {
+			li {
+				a:link,
+				a:visited {
+					background: $colortwo;
+					color: $lightfont;
+				}
+			}
+		}
+	}
+}
+
+#call_out_boxes {
+	background: $colorone;
+	
+	.cob_1,
+	.cob_2,
+	.cob_3,
+	.cob_4,
+	.cob_5 {
+		.call_out_boxes_item {
+			.square.fas,
+			.circle.fas {
+				background: $colortwo;
+				color: $lightfont;
+			}
+			
+			h1,h2,h3 {
+				color: $colortwo;
+			}
+			
+			p {
+				color: $lightfont;
+			}
+			
+			a:link,
+			a:visited {
+				background: $colortwo;
+				color: $lightfont;
+			}
+		}
+	}
+}
+
+#main {
+	background: $background;
+	
+	.content {
+		h1,h3 {
+			color: $colorone;
+		}
+		
+		hr.divider {
+			background: $colorone;
+		}
+		
+		p {
+			color: $bodyfont;
+		}
+		
+		a:link,
+		a:visited {
+			color: $colorone;
+			
+			&.button {
+				background: $colorone;
+				color: $lightfont;
+			}
+		}
+	}
+	
+	.sidebar {
+		.business_information_wrapper {
+			background: $colortwo;
+			
+			h3 {
+				color: $lightfont;
+			}
+			
+			p {
+				color: $lightfont;
+			}
+			
+			ul.business_hours {
+				li {
+					span {
+						color: $lightfont;
+					}
+				}
+			}
+			
+			.contact_info {
+				ul {
+					li {
+						color: $lightfont;
+						
+						a:link,
+						a:visited {
+							color: $lightfont;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#tabs>ul {
+	li.ui-tabs-active {
+		a:link,
+		a:visited {
+			color: $colorone;
+			border-bottom: 1px solid $colorone;
+		}
+	}
+}
+
+#accordion>h3:hover, 
+#accordion>h3.ui-state-active {
+	color: $colorone;
+}
+
+#parallax {
+	background: url('../img/parallax.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+		
+	.filter {
+		background: rgba($colortwo, .5);
+	}
+}
+
+.edit_button {
+	a:link,
+	a:visited {
+		background: $colorone;
+	}
+}
+
+*/
+
+/* blog page 
+
+.blog_home article.blog_preview {
+	span.edit,
+	span.author,
+	span.date {
+		a:link, 
+		a:visited {
+			color: $colortwo;
+		}
+	}
+}
+
+.blog_sidebar {
+	background: $background;
+	
+	#blog_sidebar_1,
+	#blog_sidebar_2 {
+		ul {
+			li {
+				a:link,
+				a:visited {
+					color: $colortwo;
+				}
+			}
+		}
+	}
+}
+
+article.blog_entry {
+	.meta {
+		span.date,
+		span.author,
+		span.category {
+			a:link,
+			a:visited {
+				color: $colortwo;
+			}
+		}
+	}
+	
+	.tagcloud {
+		a:link,
+		a:visited {
+			border: 1px solid $colortwo;
+			color: $colortwo;
+		}
+	}
+}
+
+*/
+
+/* footer 
+
+footer {
+	background: $colorone;
+	
+	h3 {
+		color: $lightfont;
+	}
+	
+	p {
+		color: $lightfont;
+	}
+	
+	ul {
+		li {
+			a:link,
+			a:visited {
+				color: $lightfont;
+			}
+			
+			.post-date {
+				color: $lightfont;
+			}
+		}
+	}
+	
+	.tagcloud {
+		a:link,
+		a:visited {
+			border: 1px solid $lightfont;
+			color: $lightfont;
+		}
+	}
+}
+
+#copyright {
+	background: $colorone;
+}
+
+*/
 
 
-
-
-
-/* responsive media queries */
+/* responsive media queries - 980 to 1220 
 
 @media (min-width: 980px) and (max-width: 1220px) {
 	
+	header {
+		&#header_home_mobile {
+			background: url('../img/home.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+		
+		&#header_page_mobile {
+			background: url('../img/page.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+	
 }
+
+*/
+
+/* responsive media queries - 768 to 979 
 	
 @media (min-width: 768px) and (max-width: 979px) {
 	
+	header {
+		&#header_home_mobile {
+			background: url('../img/home_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+		
+		&#header_page_mobile {
+			background: url('../img/page_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+	
 }
+
+*/
+
+/* responsive media queries - 480 to 767 
 	
 @media (min-width: 480px) and (max-width: 767px) {
 	
+	header {
+		&#header_home_mobile {
+			background: url('../img/home_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+		
+		&#header_page_mobile {
+			background: url('../img/page_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+	
 }
+
+*/
+
+/* responsive media queries - 0 to 479 
 	
 @media (min-width: 0px) and (max-width: 479px) {
 	
+	header {
+		&#header_home_mobile {
+			background: url('../img/home_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+		
+		&#header_page_mobile {
+			background: url('../img/page_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+	
 }
+
+*/
+
+/* end theme edits */
