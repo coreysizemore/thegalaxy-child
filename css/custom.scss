@@ -23,6 +23,31 @@ $bodyfont: #888888;
 
 */
 
+/* attention header 
+
+#attention_bar_header {
+	background: $colorone;
+	
+	.attention_bar_header_content {
+		h3 {
+			color: $lightfont;
+		}
+		
+		div {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						color: $colortwo;
+					}
+				}
+			}
+		}
+	}
+}
+
+*/
+
 /* header 
 
 a#searchopen,
