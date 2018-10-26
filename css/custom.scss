@@ -128,14 +128,32 @@ header {
 		}
 	}
 	
-	#home_logo {
-		#home_page_nav {
-			ul {
-				li {
-					a:link,
-					a:visited {
-						background: $colortwo;
-						color: $lightfont;
+	&#header_home {
+		#home_logo {
+			#home_page_nav {
+				ul {
+					li {
+						a:link,
+						a:visited {
+							background: $colortwo;
+							color: $lightfont;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&#header_home_mobile {
+		#home_logo {
+			#home_page_nav {
+				ul {
+					li {
+						a:link,
+						a:visited {
+							background: $colortwo;
+							color: $lightfont;
+						}
 					}
 				}
 			}
@@ -402,7 +420,6 @@ footer {
 }
 
 */
-
 
 /* responsive media queries - 980 to 1220 
 
