@@ -10,21 +10,29 @@ $bodyfont: #888888;
 
 /* end color variables */
 
+/* font type */
+
+$fontsans: 'Poppins',sans-serif;
+$fontserif: 'Merriweather', serif;
+
+/* end font type */
+
 /* start theme edits */
 
-/* top bar 
+/* top bar */
 
+/*
 #top_bar {
 	&.fullwidth,
 	&.containerwidth {
 		background: $colorone;
 	}
 }
-
 */
 
-/* attention header 
+/* attention header */
 
+/*
 #attention_bar_header {
 	background: $colorone;
 	
@@ -45,11 +53,11 @@ $bodyfont: #888888;
 		}
 	}
 }
-
 */
 
-/* header 
+/* header */
 
+/*
 a#searchopen,
 a#mobileopen {
 	&:link,
@@ -164,11 +172,11 @@ header {
 		background: rgba($colortwo, .75);
 	}
 }
-
 */
 
-/* main content areas 
+/* main content areas */
 
+/*
 .breadcrumb_wrapper {
 	span.breadcrumbs {
 		a:link,
@@ -325,11 +333,11 @@ header {
 		background: $colorone;
 	}
 }
-
 */
 
-/* blog page 
+/* blog page */
 
+/*
 .blog_home article.blog_preview {
 	span.edit,
 	span.author,
@@ -377,11 +385,11 @@ article.blog_entry {
 		}
 	}
 }
-
 */
 
-/* footer 
+/* footer */
 
+/*
 footer {
 	background: $colorone;
 	
@@ -418,11 +426,11 @@ footer {
 #copyright {
 	background: $colorone;
 }
-
 */
 
-/* responsive media queries - 980 to 1220 
+/* responsive media queries - 980 to 1220 */
 
+/*
 @media (min-width: 980px) and (max-width: 1220px) {
 	
 	header {
@@ -440,11 +448,11 @@ footer {
 	}
 	
 }
-
 */
 
-/* responsive media queries - 768 to 979 
-	
+/* responsive media queries - 768 to 979 */
+
+/*
 @media (min-width: 768px) and (max-width: 979px) {
 	
 	header {
@@ -462,11 +470,11 @@ footer {
 	}
 	
 }
-
 */
 
-/* responsive media queries - 480 to 767 
-	
+/* responsive media queries - 480 to 767 */
+
+/*
 @media (min-width: 480px) and (max-width: 767px) {
 	
 	header {
@@ -484,11 +492,11 @@ footer {
 	}
 	
 }
-
 */
 
-/* responsive media queries - 0 to 479 
-	
+/* responsive media queries - 0 to 479 */
+
+/*
 @media (min-width: 0px) and (max-width: 479px) {
 	
 	header {
@@ -506,7 +514,6 @@ footer {
 	}
 	
 }
-
 */
 
 /* end theme edits */
